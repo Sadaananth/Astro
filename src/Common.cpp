@@ -56,3 +56,20 @@ std::string toString(Natchathiram natchathiram)
 
     throw std::runtime_error("Unknown Natchathiram");
 }
+
+std::string toString(Graham graham)
+{
+    switch(graham) {
+        case Graham::Suryan : return "Suryan";
+        case Graham::Chandran : return "Chandran";
+        case Graham::Sevvai : return "Sevvai";
+        case Graham::Puthan : return "Puthan";
+        case Graham::Sukkiran : return "Sukkiran";
+        case Graham::Guru : return "Guru";
+        case Graham::Sani : return "Sani";
+        case Graham::Ragu : return "Ragu";
+        case Graham::Kethu : return "Kethu";
+    }
+
+    throw std::runtime_error("Unknown Graham");
+}

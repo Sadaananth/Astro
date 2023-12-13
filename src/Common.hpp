@@ -52,5 +52,19 @@ enum class Natchathiram : uint8_t
     Revathi
 };
 
+enum class Graham : uint8_t
+{
+    Suryan,
+    Chandran,
+    Sevvai,
+    Puthan,
+    Sukkiran,
+    Guru,
+    Sani,
+    Ragu,
+    Kethu
+};
+
 std::string toString(Rasi rasi);
 std::string toString(Natchathiram natchathiram);
+std::string toString(Graham graham);
