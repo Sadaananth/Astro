@@ -3,11 +3,11 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 cc_binary(
     name = "Astro",
     srcs = [
-        "main.cpp",
         "Application.cpp",
         "Application.hpp",
         "Kattam.cpp",
         "Kattam.hpp",
+        "main.cpp",
     ],
     linkopts = [
         "-lsfml-graphics",
@@ -16,7 +16,7 @@ cc_binary(
     ],
     visibility = ["//visibility:public"],
     deps = [
-        "@SadaLogger",
         "//src:AstroLib",
+        "@SadaLogger",
     ],
 )

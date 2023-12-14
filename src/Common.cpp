@@ -73,3 +73,57 @@ std::string toString(Graham graham)
 
     throw std::runtime_error("Unknown Graham");
 }
+
+std::string toString(Bootham bootham)
+{
+    switch(bootham) {
+        case Bootham::Neruppu : return "Neruppu";
+        case Bootham::Neer : return "Neer";
+        case Bootham::Kaatru : return "Kaatru";
+        case Bootham::Nilam : return "Nilam";
+    }
+
+    throw std::runtime_error("Unknown Bootham");
+}
+
+std::string toString(Gunam gunam)
+{
+    switch(gunam) {
+        case Gunam::Saram : return "Saram";
+        case Gunam::Sthiram : return "Sthiram";
+        case Gunam::Ubayam : return "Ubayam";
+    }
+
+    throw std::runtime_error("Unknown Gunam");
+}
+
+std::string toString(Gender gender)
+{
+    switch(gender) {
+        case Gender::Aan: return "Aan";
+        case Gender::Pen: return "Pen";
+        case Gender::Ali: return "Ali";
+    }
+
+    throw std::runtime_error("Unknown Gender");
+}
+
+std::string toString(Maatham maatham)
+{
+    switch(maatham) {
+        case Maatham::Chithirai: return "Chithirai";
+        case Maatham::Vaikasi: return "Vaikasi";
+        case Maatham::Aani: return "Aani";
+        case Maatham::Aadi: return "Aadi";
+        case Maatham::Aavani: return "Aavani";
+        case Maatham::Purattasi: return "Purattasi";
+        case Maatham::Aippasi: return "Aippasi";
+        case Maatham::Kaarthigai: return "Kaarthigai";
+        case Maatham::Maargali: return "Maargali";
+        case Maatham::Thai: return "Thai";
+        case Maatham::Maasi: return "Maasi";
+        case Maatham::Panguni: return "Panguni";
+    }
+
+    throw std::runtime_error("Unknown Maatham");
+}

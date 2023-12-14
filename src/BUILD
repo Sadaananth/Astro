@@ -4,12 +4,12 @@ cc_library(
     name = "AstroLib",
     srcs = [
         "Common.cpp",
-        "RasiBuilderClass.cpp",
+        "ConfigBuilderClass.cpp",
     ],
     hdrs = [
         "Common.hpp",
-        "Rasi.hpp",
-        "RasiBuilderClass.hpp",
+        "Config.hpp",
+        "ConfigBuilderClass.hpp",
     ],
     visibility = ["//visibility:public"],
 )
