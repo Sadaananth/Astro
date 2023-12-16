@@ -1,8 +1,15 @@
 #pragma once
 
 #include "Common.hpp"
+#include "utils/TamilTime.hpp"
 
 #include <vector>
+
+struct RasiMaanam
+{
+    Nazhigai nazhigai;
+    Vinazhigai vinazhigai;
+};
 
 struct KattamConfig
 {
@@ -16,6 +23,7 @@ struct KattamConfig
     Bootham bootham;
     Gunam gunam;
     Gender gender;
+    RasiMaanam rasiMaanam;
 };
 
 struct GrahamConfig

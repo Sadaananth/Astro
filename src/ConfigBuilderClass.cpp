@@ -10,18 +10,18 @@ const uint16_t degreePerRasi = 30;
 KattamConfig ConfigBuilderClass::construct(uint8_t kattamIndex)
 {
     static const std::map<uint8_t, KattamConfig> kattamConfig{
-        {1, {1, Rasi::Mesham, 30, Graham::Sevvai, {Graham::Suryan}, {Graham::Sani}, {Graham::Sevvai}, Bootham::Neruppu, Gunam::Saram, Gender::Aan}},
-        {2, {2, Rasi::Rishabam, 60, Graham::Sukkiran, {Graham::Ragu, Graham::Chandran}, {Graham::Kethu}, {Graham::Chandran}, Bootham::Nilam, Gunam::Sthiram, Gender::Pen}},
-        {3, {3, Rasi::Mithunam, 90, Graham::Puthan, {}, {}, {}, Bootham::Kaatru, Gunam::Ubayam, Gender::Aan}},
-        {4, {4, Rasi::Kadagam, 120, Graham::Chandran, {Graham::Guru}, {Graham::Sevvai}, {}, Bootham::Neer, Gunam::Saram, Gender::Pen}},
-        {5, {5, Rasi::Simmam, 150, Graham::Suryan, {}, {}, {Graham::Suryan}, Bootham::Neruppu, Gunam::Sthiram, Gender::Aan}},
-        {6, {6, Rasi::Kanni, 180, Graham::Puthan, {Graham::Puthan}, {Graham::Sukkiran}, {Graham::Puthan}, Bootham::Nilam, Gunam::Ubayam, Gender::Pen}},
-        {7, {7, Rasi::Thulam, 210, Graham::Sukkiran, {Graham::Sani}, {Graham::Suryan}, {Graham::Sukkiran}, Bootham::Kaatru, Gunam::Saram, Gender::Aan}},
-        {8, {8, Rasi::Viruchagam, 240, Graham::Sevvai, {Graham::Kethu}, {Graham::Ragu, Graham::Chandran}, {}, Bootham::Neer, Gunam::Sthiram, Gender::Pen}},
-        {9, {9, Rasi::Thanusu, 270, Graham::Guru, {}, {}, {Graham::Guru}, Bootham::Neruppu, Gunam::Ubayam, Gender::Aan}},
-        {10, {10, Rasi::Magaram, 300, Graham::Sani, {Graham::Sevvai}, {Graham::Guru}, {}, Bootham::Nilam, Gunam::Saram, Gender::Pen}},
-        {11, {11, Rasi::Kumbam, 330, Graham::Sani, {}, {}, {Graham::Sani}, Bootham::Kaatru, Gunam::Sthiram, Gender::Aan}},
-        {12, {12, Rasi::Meenam, 360, Graham::Guru, {Graham::Sukkiran}, {Graham::Puthan}, {}, Bootham::Neer, Gunam::Ubayam, Gender::Pen}}
+        {1, {1, Rasi::Mesham, 30, Graham::Sevvai, {Graham::Suryan}, {Graham::Sani}, {Graham::Sevvai}, Bootham::Neruppu, Gunam::Saram, Gender::Aan, {Nazhigai{4}, Vinazhigai{15}}}},
+        {2, {2, Rasi::Rishabam, 60, Graham::Sukkiran, {Graham::Ragu, Graham::Chandran}, {Graham::Kethu}, {Graham::Chandran}, Bootham::Nilam, Gunam::Sthiram, Gender::Pen, {Nazhigai{4}, Vinazhigai{45}}}},
+        {3, {3, Rasi::Mithunam, 90, Graham::Puthan, {}, {}, {}, Bootham::Kaatru, Gunam::Ubayam, Gender::Aan, {Nazhigai{5}, Vinazhigai{15}}}},
+        {4, {4, Rasi::Kadagam, 120, Graham::Chandran, {Graham::Guru}, {Graham::Sevvai}, {}, Bootham::Neer, Gunam::Saram, Gender::Pen, {Nazhigai{5}, Vinazhigai{30}}}},
+        {5, {5, Rasi::Simmam, 150, Graham::Suryan, {}, {}, {Graham::Suryan}, Bootham::Neruppu, Gunam::Sthiram, Gender::Aan, {Nazhigai{5}, Vinazhigai{15}}}},
+        {6, {6, Rasi::Kanni, 180, Graham::Puthan, {Graham::Puthan}, {Graham::Sukkiran}, {Graham::Puthan}, Bootham::Nilam, Gunam::Ubayam, Gender::Pen, {Nazhigai{5}, Vinazhigai{}}}},
+        {7, {7, Rasi::Thulam, 210, Graham::Sukkiran, {Graham::Sani}, {Graham::Suryan}, {Graham::Sukkiran}, Bootham::Kaatru, Gunam::Saram, Gender::Aan, {Nazhigai{5}, Vinazhigai{}}}},
+        {8, {8, Rasi::Viruchagam, 240, Graham::Sevvai, {Graham::Kethu}, {Graham::Ragu, Graham::Chandran}, {}, Bootham::Neer, Gunam::Sthiram, Gender::Pen, {Nazhigai{5}, Vinazhigai{15}}}},
+        {9, {9, Rasi::Thanusu, 270, Graham::Guru, {}, {}, {Graham::Guru}, Bootham::Neruppu, Gunam::Ubayam, Gender::Aan, {Nazhigai{5}, Vinazhigai{30}}}},
+        {10, {10, Rasi::Magaram, 300, Graham::Sani, {Graham::Sevvai}, {Graham::Guru}, {}, Bootham::Nilam, Gunam::Saram, Gender::Pen, {Nazhigai{5}, Vinazhigai{15}}}},
+        {11, {11, Rasi::Kumbam, 330, Graham::Sani, {}, {}, {Graham::Sani}, Bootham::Kaatru, Gunam::Sthiram, Gender::Aan, {Nazhigai{4}, Vinazhigai{45}}}},
+        {12, {12, Rasi::Meenam, 360, Graham::Guru, {Graham::Sukkiran}, {Graham::Puthan}, {}, Bootham::Neer, Gunam::Ubayam, Gender::Pen, {Nazhigai{4}, Vinazhigai{15}}}}
     };
 
     return kattamConfig.at(kattamIndex);

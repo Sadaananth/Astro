@@ -11,5 +11,6 @@ cc_library(
         "Config.hpp",
         "ConfigBuilderClass.hpp",
     ],
+    deps = ["//utils:Utils"],
     visibility = ["//visibility:public"],
 )
